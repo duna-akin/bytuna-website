@@ -127,7 +127,7 @@ import React, { useState } from 'react';
                     </div>
                     <div>
                       <p className="font-semibold">{t('locationLabel')}</p>
-                      <p className="text-muted-foreground">{language === 'en' ? 'New York City, NY' : 'New York City, ABD'}</p>
+                      <p className="text-muted-foreground">{language === 'en' ? 'Easton, PA' : 'Tri-State Bölgesi, ABD'}</p>
                     </div>
                   </div>
                 </CardContent>
