@@ -1,0 +1,95 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    :root {
+      /* Light Mode - Optional Toggle */
+      --background: 0 0% 100%; /* White or very light gray */
+      --foreground: 0 0% 15%; /* Near-black or dark gray */
+      
+      --card: 0 0% 98%; /* Slightly off-white for cards */
+      --card-foreground: 0 0% 15%;
+      
+      --popover: 0 0% 98%;
+      --popover-foreground: 0 0% 15%;
+      
+      --primary: 145 63% 30%; /* Deep green (emerald) */
+      --primary-foreground: 0 0% 98%; /* Light gray or off-white for text on primary */
+      
+      --secondary: 150 50% 85%; /* Lighter mint/lime for hover/focus on secondary elements */
+      --secondary-foreground: 145 63% 20%; /* Darker green for text on secondary */
+      
+      --muted: 0 0% 96.1%;
+      --muted-foreground: 0 0% 45.1%;
+      
+      --accent: 150 55% 50%; /* Brighter green or mint for hover/focus */
+      --accent-foreground: 0 0% 98%;
+      
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+      
+      --border: 150 20% 80%; /* Light green-gray for subtle structure */
+      --input: 150 20% 85%; /* Light green-gray for input borders */
+      --ring: 145 63% 40%; /* Emerald green for focus rings */
+      
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      /* Dark Mode First (Default Look) */
+      --background: 0 0% 3.9%; /* Deep black or charcoal (#0A0A0A) */
+      --foreground: 0 0% 90%; /* Light gray or off-white */
+
+      --card: 0 0% 7%; /* Slightly lighter black or dark gray for depth */
+      --card-foreground: 0 0% 90%;
+
+      --popover: 0 0% 7%;
+      --popover-foreground: 0 0% 90%;
+
+      --primary: 145 63% 40%; /* Emerald green */
+      --primary-foreground: 0 0% 98%; /* Light gray or off-white for text on primary */
+
+      --secondary: 150 50% 30%; /* Softer mint or lime for hover/focus effects (darker shade for dark mode) */
+      --secondary-foreground: 0 0% 95%;
+
+      --muted: 0 0% 10%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 150 55% 50%; /* Emerald green (can be same as primary or slightly brighter for accents) */
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 72.2% 50.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%; /* Darker border for dark mode */
+      --input: 0 0% 14.9%; /* Darker input border */
+      --ring: 145 63% 48%; /* Emerald green for focus rings */
+    }
+
+    body {
+      @apply bg-background text-foreground;
+      font-family: 'Inter', sans-serif;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    /* Glassmorphism Card */
+    .glass-card {
+      @apply bg-card/80 backdrop-blur-md border border-border/50 rounded-xl shadow-lg;
+    }
+    .dark .glass-card {
+      @apply bg-card/70 backdrop-blur-lg border-border/40;
+    }
+
+    /* Neumorphism Button - Adjusted for new theme */
+    .neumorphic-btn {
+      @apply rounded-lg shadow-[5px_5px_10px_hsl(var(--border)),-5px_-5px_10px_hsl(var(--background))] transition-all duration-200 ease-in-out;
+    }
+    .neumorphic-btn:active {
+      @apply shadow-[inset_5px_5px_10px_hsl(var(--border)),inset_-5px_-5px_10px_hsl(var(--background))];
+    }
+    .dark .neumorphic-btn {
+      @apply shadow-[5px_5px_10px_#00000033,-5px_-5px_10px_#ffffff1A]; /* Softer shadows for dark mode */
+    }
+    .dark .neumorphic-btn:active {
+      @apply shadow-[inset_5px_5px_10px_#00000033,inset_-5px_-5px_10px_#ffffff1A];
+    }
