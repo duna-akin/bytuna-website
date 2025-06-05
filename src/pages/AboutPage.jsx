@@ -8,8 +8,9 @@ import React from 'react';
     const translations = {
       en: {
         pageTitle: "About Me",
-        par1: "Hey! I’m Tuna, yes that is my actual name. I like to design and build things that give people their afternoons back: ScheduleFlow, the scheduling automation engine projected to freeing 250+ staff-hours every semester at my school, and KebApp, a mobile coupon hunter that auto-drops discounts before you tap “Pay” on Turkish e-commerce apps. Research-wise, I used to script Python pipelines that model quorum-sensing proteins and turning them into slick PyMOL visuals.",
-        par2: "Outside class I am scaling the Side Hustle Community (25+ student sellers, $5k+ total revenue so far) and serve as co-director of onboarding for 40+ admissions ambassadors—basically the person who gets our new guides tour-ready to market our school! When I’m not shipping code you’ll find me theory-crafting grand-strategy games, mapping urban walks, or perfecting the world’s slowest skateboard tricks. Got a project—or just a café rec? Let’s talk.",
+        par1: "Hey, I’m Tuna, and yes that is my actual name. (It comes from the Danube River in Europe.) ",
+        par2: "I like to design and build things that give people their afternoons back: ScheduleFlow, the scheduling automation engine projected to free 250+ staff-hours every semester at my school, and KebApp, a mobile coupon hunter that auto-drops discounts before you tap “Pay” on Turkish e-commerce apps. Research-wise, I used to script Python pipelines that model quorum-sensing proteins and turning them into slick PyMOL visuals.",
+        par3: "Outside class I am scaling the Side Hustle Community (25+ student sellers, $5k+ total revenue so far) and serve as co-director of onboarding for 40+ admissions ambassadors—basically the person who gets our new guides tour-ready to market our school! When I’m not shipping code you’ll find me theory-crafting grand-strategy games, planning urban walks, or perfecting the world’s slowest skateboard tricks. Got a project—or just a café rec? Let’s talk.",
         skillsTitle: "My Skills",
         downloadResume: "Resume",
         skills: [
@@ -21,8 +22,9 @@ import React from 'react';
       },
       tr: {
         pageTitle: "Hakkımda",
-        par1: "Selam! Ben Tuna, Lafayette’te Bilgisayar Bilimi & Ekonomi öğrencisiyim (2027 mezunuyum, not ortalamam 3.8). İnsanlara öğleden sonralarını geri kazandıran işler geliştiriyorum: Her dönem personele 250+ saat kazandıran Slate tabanlı planlama sistemi ScheduleFlow ve Türk e-ticaret uygulamalarında ödeme öncesi otomatik indirim uygulayan mobil kupon avcısı KebApp. Araştırma tarafında ise geçmişte quorum-sensing proteinlerini modelleyen Python betikleri yazıyor ve bunları şık PyMOL görsellerine dönüştürüyordum.",
-        par2: "Ders dışında, 25+ öğrenci girişimciyi bir araya getiren Side Hustle Community’yi büyüttüm (şimdiden 5.000 $+ ciro) ve 40+ kabul elçisinin onboarding süreçlerinden sorumlu eş-yöneticilik yapıyorum—yeni rehberleri tura hazır hale getiren kişi yani. Kod yazmadığımda grand-strategy oyunlarında teoriler üretir, şehir yürüyüşleri planlar veya dünyanın en yavaş kaykay numaralarını mükemmelleştirmeye çalışırım. Bir proje fikrin ya da sadece iyi bir kahve önerin mi var? Hadi konuşalım.",
+        par1: "Selamlar! Ben Tuna.",
+        par2: "Amerika'da %100 tam burslu olarak Yazılım Mühendisliği & İktisat okuyorum. İnsanlara öğleden sonralarını geri kazandıran işler geliştiriyorum: Her dönem personele 250+ saat kazandırması planlanan Slate CRM tabanlı planlama sistemi ScheduleFlow ve Türk e-ticaret uygulamalarında ödeme öncesi otomatik indirim uygulayan mobil kupon avcısı KebApp. Araştırma tarafında ise geçmişte quorum-sensing proteinlerini modelleyen Python betikleri yazıyor ve bunları şık PyMOL görsellerine dönüştürüyordum.",
+        par3: "Ders dışında, 25+ öğrenci girişimciyi bir araya getiren Side Hustle Community’yi büyütüyorum. (Şimdiden 5.000$+ ciro) 40+ kabul elçisinin onboarding süreçlerinden sorumlu eş-yöneticilik yapıyorum — yeni rehberleri okulu marketlemek için tura hazır hale getiren kişi yani. Kod yazmadığımda CK3 ya da EU4 gibi grand-strategy oyunlarında teoriler üretir, New York'ta şehir yürüyüşleri planlar veya dünyanın en yavaş kaykay numaralarını mükemmelleştirmeye çalışırım. Bir proje fikrin ya da sadece iyi bir cafe önerin mi var? Konuşmaktan çekinme.",
         skillsTitle: "Yeteneklerim",
         downloadResume: "Resume",
         skills: [
@@ -83,6 +85,9 @@ import React from 'react';
                   </p>
                   <p className="mb-4">
                     {t('par2')}
+                  </p>
+                  <p className="mb-4">
+                    {t('par3')}
                   </p>
                 </CardContent>
               </Card>
