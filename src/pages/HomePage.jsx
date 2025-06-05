@@ -7,14 +7,14 @@ import React from 'react';
 
     const translations = {
       en: {
-        yourName: "Tuna Akin",
-        tagline: "Computer Science & Economics Undergraduate",
+        yourName: "Tuna A.",
+        tagline: "Entrepreneurial Developer With A Passion For System Design",
         downloadResume: "Resume",
         learnMore: "Learn More"
       },
       tr: {
-        yourName: "Tuna AKIN",
-        tagline: "Yazılım Mühendisliği & Ekonomi Lisans Öğrencisi",
+        yourName: "Tuna A.",
+        tagline: "Sistem Tasarımına Tutkulu Girişimci Geliştirici",
         downloadResume: "Resume",
         learnMore: "Daha Fazla Bilgi"
       }
@@ -45,7 +45,7 @@ import React from 'react';
           >
             <img  
               className="w-40 h-40 rounded-full object-cover mx-auto shadow-2xl border-4 border-primary/30 dark:border-emerald-green/40" 
-              alt={t('Tuna') + " Profile Picture"}
+              alt={t('yourName') + " Profile Picture"}
              src="/images/tuna-akin.jpg" />
           </motion.div>
 
@@ -55,10 +55,10 @@ import React from 'react';
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2, type: 'spring', stiffness: 120 }}
           >
-            {t('Tuna')}
+            {t('yourName')}
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
