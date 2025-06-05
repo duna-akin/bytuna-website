@@ -68,7 +68,7 @@ import React from 'react';
               <img  
                 className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl border-4 border-primary/20 dark:border-emerald-green/30" 
                 alt="Tuna Profile Image"
-               src="../public/images/tuna-akin.jpg" />
+               src="/images/tuna-akin.jpg" />
             </motion.div>
             <motion.div 
               className="md:col-span-2"
