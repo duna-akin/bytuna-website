@@ -46,7 +46,7 @@ import React from 'react';
             <img  
               className="w-40 h-40 rounded-full object-cover mx-auto shadow-2xl border-4 border-primary/30 dark:border-emerald-green/40" 
               alt={t('Tuna') + " Profile Picture"}
-             src="../public/images/tuna-akin.jpg" />
+             src="/images/tuna-akin.jpg" />
           </motion.div>
 
           <motion.h1 
@@ -55,7 +55,7 @@ import React from 'react';
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2, type: 'spring', stiffness: 120 }}
           >
-            {t('yourName')}
+            {t('Tuna')}
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto"
