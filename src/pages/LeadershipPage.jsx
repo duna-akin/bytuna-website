@@ -12,13 +12,13 @@ import React from 'react';
             role: 'President',
             organization: 'Side Hustle Community',
             date: 'Spring 2025',
-            impact: 'Since Spring 2025, I’ve served as Founder and President of the Side Hustle Community, a campus-wide initiative supporting student-run ventures at Lafayette. I’ve grown the network to 25+ student sellers, collectively generating over $5,000 in revenue, and established an executive board to help lead strategic expansion efforts in collaboration with the Dyer Center. I conduct member surveys, implement growth plans, and organize key events—including semesterly fairs with 200+ attendees, pop-up mini-markets with local businesses, and the “Student-Made” retail partnership with the campus store.',       logoAlt: "Economics Club Logo"
+            impact: 'Since Spring 2025, I’ve started serving as the President of the Side Hustle Community, a campus-wide initiative supporting student-run ventures at Lafayette. We’ve grown the network to 25+ student sellers, collectively generating over $5,000 in revenue, and established an executive board to help lead strategic expansion efforts in collaboration with the Dyer Center. I conduct member surveys, implement growth plans, and organize key events—including semesterly fairs with 200+ attendees, pop-up mini-markets with local businesses, and the “Student-Made” retail partnership with the campus store.',
           },
           {
             role: 'Co-Director of Onboarding & Ambassador Training',
             organization: 'Ambassadors of Lafayette',
             date: 'Spring 2024 – Summer 2025',
-            impact: 'From Spring 2024 to Summer 2025, I served as Co-Director of Onboarding and Training for the Ambassadors of Lafayette, acting as a key liaison between over 40 student ambassadors and senior admissions leadership. I led efforts to resolve operational concerns and proposed policy updates in strategic meetings. Collaborating with the marketing team, I helped refine tour scripts and co-developed social media campaigns that reached over 5,000 prospective students. I also designed and led ambassador onboarding sessions and training workshops each semester, improving overall tour quality and message consistency.',
+            impact: 'From Spring 2024 to Summer 2025, I served as Co-Director of Onboarding and Training for the Ambassadors of Lafayette, acting as a key liaison between over 40 student ambassadors and senior admissions leadership. I led efforts to resolve operational concerns and proposed policy updates in meetings. Collaborating with the marketing team, I helped refine tour scripts and co-developed social media campaigns that reached over 5,000 prospective students. I also designed and led ambassador onboarding sessions and training workshops each semester, improving overall tour quality and message consistency.',
           },
         ]
       },
@@ -26,18 +26,17 @@ import React from 'react';
         pageTitle: "Liderlik & Katılımlar",
         roles: [
           {
-            "role": "Başkan",
-            "organization": "Side Hustle Community",
-            "date": "İlkbahar 2025",
-            "impact": "İlkbahar 2025’ten bu yana, Lafayette’te öğrenci girişimlerini destekleyen kampüs çapında bir girişim olan Side Hustle Community’nin kurucusu ve başkanı olarak görev yapıyorum. Ağı 25+ öğrenci girişimciden oluşacak şekilde büyüttüm; üyeler toplamda 5.000 $’dan fazla gelir elde etti. Stratejik büyüme çalışmalarını Dyer Center ile iş birliği içinde yürütmek üzere bir yürütme kurulu kurdum. Üye anketleri düzenliyor, büyüme planlarını uyguluyor ve önemli etkinlikler organize ediyorum—200+ katılımlı dönemlik fuarlar, yerel işletmelerle yapılan mini pazarlar ve kampüs mağazasıyla yürütülen 'Student-Made' perakende ortaklığı bunlardan bazıları.",
-            "logoAlt": "İktisat Kulübü Logosu"
+            role: 'Başkan',
+            organization: 'Side Hustle Community',
+            date: 'İlkbahar 2025',
+            impact: 'İlkbahar 2025’ten itibaren, Lafayette’te öğrenci girişimlerini destekleyen kampüs çapında bir girişim olan Side Hustle Community’nin Başkanı olarak görev yapıyorum. Ağı 25’ten fazla öğrenci girişimcisine büyüttük ve toplamda 5.000$’ın üzerinde gelir elde ettik. Ayrıca, Dyer Center iş birliğiyle stratejik büyüme çalışmalarını yönlendirecek bir yürütme kurulu kurduk. Üyelerle anketler yürütüyor, büyüme planları uyguluyor ve dönemlik panayırlar (200+ katılımcı), yerel işletmelerle mini pazarlar ve okul mağazasıyla “Student-Made” perakende iş birliği gibi önemli etkinlikleri organize ediyorum.'
           },
           {
-            "role": "Onboarding & Elçi Eğitimi Eş-Direktörü",
-            "organization": "Ambassadors of Lafayette",
-            "date": "İlkbahar 2024 – Yaz 2025",
-            "impact": "İlkbahar 2024’ten Yaz 2025’e kadar, Ambassadors of Lafayette ekibinde Onboarding ve Elçi Eğitimi Eş-Direktörü olarak görev yaptım ve 40’tan fazla öğrenci elçisi ile üst düzey kabul ofisi yöneticileri arasında köprü görevi gördüm. Operasyonel sorunları çözmeye yönelik çalışmalar yürüttüm ve stratejik toplantılarda politika önerileri sundum. Pazarlama ekibiyle birlikte tur anlatımlarını geliştirdik ve 5.000’den fazla potansiyel öğrenciye ulaşan sosyal medya kampanyaları oluşturduk. Ayrıca her dönem onboarding oturumlarını ve eğitim atölyelerini tasarlayıp yönettim; bu sayede turların genel kalitesi ve iletilen mesajların tutarlılığı iyileştirildi."
-          },
+            role: 'Onboarding ve Elçi Eğitimi Eş-Direktörü',
+            organization: 'Ambassadors of Lafayette',
+            date: 'İlkbahar 2024 – Yaz 2025',
+            impact: 'İlkbahar 2024’ten Yaz 2025’e kadar, Ambassadors of Lafayette bünyesinde Onboarding ve Elçi Eğitimi Eş-Direktörü olarak görev yaptım. 40’tan fazla öğrenci elçi ile kıdemli kabul ofisi yöneticileri arasında köprü görevi gördüm. Operasyonel sorunların çözümü ve politika güncellemeleri konusunda toplantılarda aktif rol aldım. Pazarlama ekibiyle birlikte tur anlatılarını geliştirip 5.000’den fazla adaya ulaşan sosyal medya kampanyaları tasarladım. Her dönem elçi oryantasyonlarını ve eğitim atölyelerini organize ederek tur kalitesini ve anlatım tutarlılığını artırdım.'
+          }
         ]
       }
     };
