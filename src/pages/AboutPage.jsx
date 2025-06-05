@@ -8,8 +8,8 @@ import React from 'react';
     const translations = {
       en: {
         pageTitle: "About Me",
-        par1: "Hey! I’m Tuna, a Computer Science & Economics student at Lafayette (rocking a 3.8 GPA) from the class of 2027. I build things that give people their afternoons back: ScheduleFlow, the Slate-powered scheduling engine freeing 250+ staff-hours every semester, and KebApp, a mobile coupon hunter that auto-drops discounts before you tap “Pay” on Turkish e-commerce apps. Research-wise, I used to script Python pipelines that model quorum-sensing proteins and turning them into slick PyMOL visuals.",
-        par2: "Outside class I scaled the Side Hustle Community (25+ student sellers, $5k+ revenue so far) and serve as co-director of onboarding for 40+ admissions ambassadors—basically the hype-man who gets new guides tour-ready. When I’m not shipping code you’ll find me theory-crafting grand-strategy games, mapping urban walks, or perfecting the world’s slowest skateboard tricks. Got a project—or just a café rec? Let’s talk.",
+        par1: "Hey! I’m Tuna, a Computer Science & Economics student at Lafayette. I build things that give people their afternoons back: ScheduleFlow, the Slate-powered scheduling engine freeing 250+ staff-hours every semester, and KebApp, a mobile coupon hunter that auto-drops discounts before you tap “Pay” on Turkish e-commerce apps. Research-wise, I used to script Python pipelines that model quorum-sensing proteins and turning them into slick PyMOL visuals.",
+        par2: "Outside class I am scaling the Side Hustle Community (25+ student sellers, $5k+ total revenue so far) and serve as co-director of onboarding for 40+ admissions ambassadors—basically the hype-man who gets new guides tour-ready. When I’m not shipping code you’ll find me theory-crafting grand-strategy games, mapping urban walks, or perfecting the world’s slowest skateboard tricks. Got a project—or just a café rec? Let’s talk.",
         skillsTitle: "My Skills",
         downloadResume: "Resume",
         skills: [
