@@ -74,8 +74,7 @@ import React from 'react';
             <Button
               asChild
               size="lg"
-              className="bg-gradient-to-r from-emerald-green to-green-600 hover:from-green-600 hover:to-emerald-green/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 neumorphic-btn"
->
+              className="bg-gradient-to-r from-emerald-green to-green-600 hover:from-green-600 hover:to-emerald-green/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 neumorphic-btn">
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
                 {t('downloadResume')}
