@@ -42,7 +42,7 @@ import React, { useState } from 'react';
         nameLabel: "Tam Adınız",
         namePlaceholder: "Adınızı giriniz",
         emailAddressLabel: "E-posta Adresi",
-        emailPlaceholder: "isim@example.edu",
+        emailPlaceholder: "isim@example.com",
         messageLabel: "Mesajınız",
         messagePlaceholder: "Merhaba...",
         sendButton: "Mesaj Gönder",
@@ -68,15 +68,38 @@ import React, { useState } from 'react';
       const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        console.log('Form data submitted:', formData);
-        toast({
-          title: t('toastSuccessTitle'),
-          description: t('toastSuccessDesc'),
-          variant: "default",
-          className: "bg-card border-primary text-foreground dark:bg-card dark:border-emerald-green dark:text-foreground",
-        });
-        setFormData({ name: '', email: '', message: '' });
+        try {
+          const response = await fetch('https://formspree.io/f/mrbkbvre', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: formData.name,
+              email: formData.email,
+              message: formData.message,
+            }),
+          });
+          if (response.ok) {
+            toast({
+              title: t('toastSuccessTitle'),
+              description: t('toastSuccessDesc'),
+              variant: "default",
+              className: "bg-card border-primary text-foreground dark:bg-card dark:border-emerald-green dark:text-foreground",
+            });
+            setFormData({ name: '', email: '', message: '' });
+          } else {
+            toast({
+              title: "Error",
+              description: "Failed to send message.",
+              variant: "destructive",
+            });
+          }
+        } catch (error) {
+          toast({
+            title: "Error",
+            description: "Failed to send message.",
+            variant: "destructive",
+          });
+        }
         setIsSubmitting(false);
       };
 
