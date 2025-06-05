@@ -1,6 +1,6 @@
 import React from 'react';
     import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-    import { Briefcase, CalendarDays, MapPin } from 'lucide-react';
+    import { Briefcase } from 'lucide-react';
     import { motion } from 'framer-motion';
     import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -9,19 +9,18 @@ import React from 'react';
         pageTitle: "My Experience",
         experiences: [
           {
-            title: 'Project Lead & Software Developer',
+            title: 'Project Lead & System Developer',
             company: 'Lafayette College Office of Admissions',
             date: 'Summer 2025',
             location: 'Easton, PA',
-            description: 'At Lafayette College’s Department of Admissions, I serve as the Project Lead and Software Developer for a full-scale migration of the Ambassador Program into Slate CRM. Since Summer 2025, I’ve partnered directly with the Slate team to design and implement a custom scheduling engine that intelligently assigns tours based on performance and availability metrics—streamlining operations and reclaiming over 250 staff hours each semester. My work includes developing tailored Slate objects, interactive forms, and live dashboards to provide admissions leadership with real-time insights into staffing and utilization.',
-            logoAlt: "Tech Solutions Inc. Logo"
+            description: 'At Lafayette College’s Department of Admissions, I serve as the Project Lead and System Developer for a full-scale migration of the Ambassador Program into Slate CRM. Since beginning of Summer 2025, I’ve been partnering directly with our Slate team to design and implement a custom scheduling engine that will intelligently assign tours based on performance and availability metrics—streamlining operations and reclaiming over 250 staff hours each semester. My work includes developing tailored Slate objects, interactive forms, and live dashboards to provide admissions leadership with real-time insights into staffing and utilization.',
           },
           {
             title: 'Software Developer & Research Assistant',
             company: 'Dr. Heidi Hendrickson Research Group',
             date: 'Summer 2024 – Spring 2025',
             location: 'Easton, PA',
-            description: 'As a Software Developer and Research Assistant in Dr. Heidi Hendrickson’s research group from Summer 2024 to Spring 2025, I led a computational campaign to model and refine the 3D structure of the Lam quorum-sensing receptor in Anoxybacillus. Using Linux-based clusters, I ran molecular dynamics simulations and built Python pipelines to automate trajectory analysis across simulation datasets. I also produced high-resolution structural visuals and animations in PyMOL, some of which were adopted in NSF-funded publications and presentations.', logoAlt: "University Logo"
+            description: 'As a Software Developer and Research Assistant in Dr. Heidi Hendrickson’s research group from Summer 2024 to Spring 2025, I led a computational campaign to model and refine the 3D structure of the Lam quorum-sensing receptor in Anoxybacillus. Using Linux-based clusters, I ran molecular dynamics simulations and built Python pipelines to automate trajectory analysis across simulation datasets. I also produced high-resolution structural visuals and animations in PyMOL, some of which were adopted in NSF-funded publications and presentations.',
           },
           {
             title: 'Co-Developer',
@@ -29,7 +28,6 @@ import React from 'react';
             date: 'Summer 2020 – Winter 2022',
             location: 'Ankara, Turkey',
             description: 'I worked as a Co-Developer with the Presidential Office of Digital Transformation on a national smart manufacturing initiative. I developed a custom convolutional neural network (CNN) for real-time image recognition (RTIR), trained on a 1,000-image benchmark dataset. Collaborating with engineering teams, I integrated the vision module into a functional robotic framework, culminating in a demonstrable prototype. The project earned 1st place—ranked 1st out of 753 entries—in the TUBİTAK 2204‑A National Research Competition under the Computer Science category.',
-            logoAlt: "Coding Club Logo"
           },
         ]
       },
@@ -37,28 +35,25 @@ import React from 'react';
         pageTitle: "Deneyimlerim",
         experiences: [
           {
-            "title": "Proje Lideri & Yazılım Geliştirici",
-            "company": "Lafayette College Kabul Ofisi",
-            "date": "Yaz 2025",
-            "location": "Easton, PA",
-            "description": "Lafayette College Kabul Ofisi’nde, Elçi Programı’nın tamamının Slate CRM’e taşındığı bir dönüşüm sürecinde Proje Lideri ve Yazılım Geliştirici olarak görev yapıyorum. 2025 yazından bu yana Slate ekibiyle doğrudan çalışarak performans ve uygunluk metriklerine dayalı olarak turları akıllıca atayan özel bir planlama motoru tasarladım ve hayata geçirdim—bu sayede operasyonlar sadeleştirildi ve her dönem 250+ saatlik personel emeği geri kazanıldı. Çalışmalarım arasında özel Slate nesneleri, etkileşimli formlar ve anlık veri sunan canlı paneller geliştirmek de yer alıyor.",
-            "logoAlt": "Teknoloji Çözümleri A.Ş. Logosu"
+            title: 'Proje Lideri ve Sistem Geliştiricisi',
+            company: 'Lafayette College Kabul Ofisi',
+            date: 'Yaz 2025',
+            location: 'Easton, PA',
+            description: 'Lafayette College Kabul Ofisi’nde, Elçi Programı’nın tamamen Slate CRM sistemine taşınmasını yöneten Proje Lideri ve Sistem Geliştiricisi olarak görev yapıyorum. Yaz 2025’in başından itibaren Slate ekibiyle doğrudan çalışarak, performans ve müsaitlik metriklerine göre turları akıllıca atayacak özel bir planlama motoru tasarlayıp uygulamaya başladım. Bu sistem, operasyonları sadeleştirerek her dönem personelin 250 saati aşkın zamanını geri kazandırmayı hedefliyor. Görevim kapsamında özel Slate nesneleri geliştirmek, etkileşimli formlar oluşturmak ve liderliğe gerçek zamanlı veriler sunan canlı panolar tasarlamak yer alıyor.'
           },
           {
-            "title": "Yazılım Geliştirici & Araştırma Asistanı",
-            "company": "Dr. Heidi Hendrickson Araştırma Grubu",
-            "date": "Yaz 2024 – Bahar 2025",
-            "location": "Easton, PA",
-            "description": "Dr. Heidi Hendrickson’ın araştırma grubunda Yazılım Geliştirici ve Araştırma Asistanı olarak görev yaptığım süre boyunca, Anoxybacillus bakterisinde bulunan Lam quorum-sensing reseptörünün 3D yapısını modellemek ve geliştirmek için hesaplamalı bir kampanyaya liderlik ettim. Linux tabanlı kümeler üzerinde moleküler dinamik simülasyonlar çalıştırdım ve simülasyon verilerini analiz etmek için Python betikleri yazdım. Ayrıca PyMOL ile yüksek çözünürlüklü yapısal görseller ve animasyonlar ürettim; bazıları NSF destekli yayınlarda ve sunumlarda kullanıldı.",
-            "logoAlt": "Üniversite Logosu"
+            title: 'Yazılım Geliştirici ve Araştırma Asistanı',
+            company: 'Dr. Heidi Hendrickson Araştırma Grubu',
+            date: 'Yaz 2024 – Bahar 2025',
+            location: 'Easton, PA',
+            description: 'Dr. Heidi Hendrickson’ın araştırma grubunda Yaz 2024’ten Bahar 2025’e kadar Yazılım Geliştirici ve Araştırma Asistanı olarak görev aldım. Bu süreçte, Anoxybacillus türünde bulunan Lam quorum-sensing reseptörünün 3B yapısını modellemek ve iyileştirmek amacıyla kapsamlı bir hesaplamalı analiz yürüttüm. Linux tabanlı kümelerde moleküler dinamik simülasyonları çalıştırdım ve simülasyon verileri üzerinde otomatik analiz sağlayan Python tabanlı iş akışları geliştirdim. Ayrıca, PyMOL kullanarak yüksek çözünürlüklü yapısal görseller ve animasyonlar ürettim; bu içerikler bazı NSF destekli yayın ve sunumlarda kullanıldı.'
           },
           {
-            "title": "Ortak Geliştirici",
-            "company": "Cumhurbaşkanlığı Dijital Dönüşüm Ofisi",
-            "date": "Yaz 2020 – Kış 2022",
-            "location": "Ankara, Türkiye",
-            "description": "Cumhurbaşkanlığı Dijital Dönüşüm Ofisi’nin ulusal akıllı üretim girişiminde Ortak Geliştirici olarak görev aldım. 1.000 görselden oluşan bir benchmark veri setiyle eğitilmiş özel bir evrişimsel sinir ağı (CNN) geliştirerek gerçek zamanlı görsel tanıma (RTIR) sistemine katkıda bulundum. Mühendislik ekipleriyle birlikte çalışarak görsel modülü fonksiyonel bir robotik sistemle entegre ettim ve gösterilebilir bir prototip ortaya çıkardık. Proje, TÜBİTAK 2204‑A Bilgisayar Bilimleri kategorisinde 753 proje arasından 1. olarak seçildi.",
-            "logoAlt": "Kodlama Kulübü Logosu"
+            title: 'Ortak Geliştirici',
+            company: 'TÜBİTAK & Cumhurbaşkanlığı Dijital Dönüşüm Ofisi',
+            date: 'Yaz 2020 – Kış 2022',
+            location: 'Ankara, Türkiye',
+            description: 'Projemiz, TÜBİTAK 2204‑A Bilgisayar Bilimleri kategorisinde 753 proje arasından Türkiye 1.si olarak seçildi. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi’nin ulusal akıllı üretim girişiminde Ortak Geliştirici olarak görev aldım. 1.000 görselden oluşan bir benchmark veri setiyle eğitilmiş özel bir evrişimsel sinir ağı (CNN) geliştirerek gerçek zamanlı görsel tanıma (RTIR) sistemine katkıda bulundum. Mühendislik ekipleriyle birlikte çalışarak görsel modülü fonksiyonel bir robotik sistemle entegre ettim ve gösterilebilir bir prototip ortaya çıkardık.'
           }
       ]     
       }
