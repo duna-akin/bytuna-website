@@ -14,10 +14,23 @@ import React from 'react';
         skillsTitle: "My Skills",
         downloadResume: "Resume",
         skills: [
-          { name: "Project Management", level: "Advanced" },
-          { name: "Software Engineering", level: "Intermediate" },
-          { name: "Data Analysis & Visualization", level: "Proficient" },
-          { name: "Soft & Non-Technical Skills", level: "Advanced" },
+          { 
+            name: "Project Management", 
+           
+            subskills: ["Asana", "Agile/Scrum", "Stakeholder Comm."]
+          },
+          { 
+            name: "Programming Languages", 
+            subskills: ["Python", "Java", "JavaScript"]
+          },
+          { 
+            name: "Data Analysis & Visualization",
+            subskills: ["Pandas", "Excel", "R"]
+          },
+          { 
+            name: "Non-Technical Skills", 
+            subskills: ["Initiative ", "Leadership", "Documentation"]
+          },
         ]
       },
       tr: {
@@ -28,10 +41,23 @@ import React from 'react';
         skillsTitle: "Yeteneklerim",
         downloadResume: "Resume",
         skills: [
-          { name: "Proje Yönetimi", level: "İleri Düzey" },
-          { name: "Yazılım Mühendisliği", level: "Orta Düzey" },
-          { name: "Veri Analizi ve Görselleştirme", level: "Yetkin" },
-          { name: "Sosyal Beceri", level: "İleri Düzey" },
+          { 
+            name: "Proje Yönetmenliği",
+            level: "Üst Düzey",
+            subskills: ["Asana", "Aglie/Scrum", "Stakeholder Comm."]
+          },
+          {
+            name: "Programlama Dilleri",
+            subskills: ["Python", "Java", "JavaScript"]
+          },
+          {
+            name: "Veri Analizi ve Görselleştirme",
+            subskills: ["Pandas", "Excel", "R"]
+          },
+          {
+            name: "Teknik Olmayan Beceriler",
+            subskills: ["Girişimcilik", "Liderlik", "Dokümantasyon"]
+          }
         ]
       }
     };
@@ -110,14 +136,20 @@ import React from 'react';
                   transition={{ duration: 0.3, delay: 0.7 + index * 0.1 }}
                 >
                   <Card className="text-center hover:shadow-primary/20 dark:hover:shadow-emerald-green/30 transition-shadow duration-300 glass-card">
-                    <CardHeader>
-                      <div className="mx-auto mb-2 p-3 bg-primary/10 dark:bg-emerald-green/20 rounded-full inline-block">
-                        {skillIcons[index % skillIcons.length].icon}
-                      </div>
-                      <CardTitle className="text-xl !bg-none !text-foreground">{skill.name}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{skill.level}</p>
+                  <CardHeader className="pb-2"> {/* Reduce bottom padding */}
+                    <div className="mx-auto p-3 bg-primary/10 dark:bg-emerald-green/20 rounded-full inline-block mb-1"> {/* Reduce mb */}
+                      {skillIcons[index % skillIcons.length].icon}
+                    </div>
+                    <CardTitle className="text-xl !bg-none !text-foreground mb-1">{skill.name}</CardTitle> {/* Add mb-1 */}
+                  </CardHeader>
+                  <CardContent className="pt-0"> {/* Remove top padding */}
+                    {skill.subskills && skill.subskills.length > 0 && (
+                      <ul className="mt-2 text-xs text-foreground/70 space-y-1">
+                        {skill.subskills.map((sub, i) => (
+                          <li key={i}>• {sub}</li>
+                        ))}
+                      </ul>
+                    )}
                     </CardContent>
                   </Card>
                 </motion.div>
