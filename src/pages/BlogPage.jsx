@@ -10,52 +10,52 @@ import React from 'react';
       en: [
         {
           id: 1,
-          title: 'The Future of AI in Economic Modeling',
-          date: 'October 26, 2024',
-          author: 'Your Name',
-          excerpt: 'Exploring how artificial intelligence is revolutionizing traditional economic forecasting and analysis. Lorem ipsum dolor sit amet...',
+         title: 'Place-Holder Title',
+          date: 'MMMM DD, YYYY',
+          author: 'Tuna',
+          excerpt: 'Lorem ipsum dolor sit amet...',
           image: "https://images.unsplash.com/photo-1500401519266-0b71b29a05e0"
         },
         {
           id: 2,
-          title: 'React Best Practices for Scalable Applications',
-          date: 'September 15, 2024',
-          author: 'Your Name',
-          excerpt: 'A deep dive into design patterns and techniques for building robust and maintainable React applications. Consectetur adipiscing elit...',
+          title: 'Place-Holder Title',
+          date: 'MMMM DD, YYYY',
+          author: 'Tuna',
+          excerpt: 'Lorem ipsum dolor sit amet...',
           image: "https://images.unsplash.com/photo-1597440836382-e5f0bd6155f7"
         },
         {
           id: 3,
-          title: 'Behavioral Economics: Nudging for Better Outcomes',
-          date: 'August 05, 2024',
-          author: 'Your Name',
-          excerpt: 'Understanding the psychological factors that influence decision-making and how they can be applied. Sed do eiusmod tempor incididunt...',
+          title: 'Place-Holder Title',
+          date: 'MMMM DD, YYYY',
+          author: 'Tuna',
+          excerpt: 'Lorem ipsum dolor sit amet...',
           image: "https://images.unsplash.com/photo-1699679886923-7ffc57337932"
         },
       ],
       tr: [
         {
           id: 1,
-          title: 'Ekonomik Modellemede Yapay Zekanın Geleceği',
-          date: '26 Ekim 2024',
-          author: 'Adınız Soyadınız',
-          excerpt: 'Yapay zekanın geleneksel ekonomik tahmin ve analizleri nasıl devrim yarattığını keşfetmek. Lorem ipsum dolor sit amet...',
+          title: 'Place-Holder Title',
+          date: 'MMMM DD, YYYY',
+          author: 'Tuna',
+          excerpt: 'Lorem ipsum dolor sit amet...',
           image: "https://images.unsplash.com/photo-1500401519266-0b71b29a05e0"
         },
         {
           id: 2,
-          title: 'Ölçeklenebilir Uygulamalar için React En İyi Uygulamaları',
-          date: '15 Eylül 2024',
-          author: 'Adınız Soyadınız',
-          excerpt: 'Sağlam ve sürdürülebilir React uygulamaları oluşturmak için tasarım desenleri ve tekniklerine derinlemesine bir bakış. Consectetur adipiscing elit...',
+          title: 'Place-Holder Title',
+          date: 'MMMM DD, YYYY',
+          author: 'Tuna',
+          excerpt: 'Lorem ipsum dolor sit amet...',
           image: "https://images.unsplash.com/photo-1597440836382-e5f0bd6155f7"
         },
         {
           id: 3,
-          title: 'Davranışsal İktisat: Daha İyi Sonuçlar İçin Dürtme',
-          date: '05 Ağustos 2024',
-          author: 'Adınız Soyadınız',
-          excerpt: 'Karar verme süreçlerini etkileyen psikolojik faktörleri ve bunların nasıl uygulanabileceğini anlamak. Sed do eiusmod tempor incididunt...',
+          title: 'Place-Holder Title',
+          date: 'MMMM DD, YYYY',
+          author: 'Tuna',
+          excerpt: 'Lorem ipsum dolor sit amet...',
           image: "https://images.unsplash.com/photo-1699679886923-7ffc57337932"
         },
       ]
