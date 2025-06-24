@@ -1,3 +1,5 @@
+// ghost code, not used
+
 import React from 'react';
     import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
     import { Briefcase } from 'lucide-react';
