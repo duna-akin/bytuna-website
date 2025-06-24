@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
     import { Button } from '@/components/ui/button';
     import ThemeToggle from '@/components/ThemeToggle';
     import LanguageToggle from '@/components/LanguageToggle';
-    import { Menu, X, Code, User, BookOpen, Mail } from 'lucide-react';
+    import { Menu, X, Code, User, FolderOpen, BookOpen, Mail } from 'lucide-react';
     import { motion, AnimatePresence } from 'framer-motion';
     import { useLanguage } from '@/contexts/LanguageContext';
     import {
@@ -19,12 +19,14 @@ import React, { useState, useEffect } from 'react';
       en: {
         home: 'Home',
         about: 'About',
+        projects: 'Projects',
         blog: 'Blog',
         contact: 'Contact',
       },
       tr: {
         home: 'Ana Sayfa',
         about: 'Hakkımda',
+        projects: 'Projeler',
         blog: 'Blog',
         contact: 'İletişim',
       }
@@ -39,6 +41,7 @@ import React, { useState, useEffect } from 'react';
       const navLinks = [
         { href: '/', labelKey: 'home', icon: <Code className="h-5 w-5" /> },
         { href: '/about', labelKey: 'about', icon: <User className="h-5 w-5" /> },
+        { href: '/projects', labelKey: 'projects', icon: <FolderOpen className="h-5 w-5" /> },
         { href: '/blog', labelKey: 'blog', icon: <BookOpen className="h-5 w-5" /> },
         { href: '/contact', labelKey: 'contact', icon: <Mail className="h-5 w-5" /> },
       ];
