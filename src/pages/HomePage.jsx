@@ -1,6 +1,6 @@
 import React from 'react';
     import { Button } from '@/components/ui/button';
-    import { Download, ArrowRight } from 'lucide-react';
+    import { Download, ArrowRight, Mail } from 'lucide-react';
     import { motion } from 'framer-motion';
     import { Link } from 'react-router-dom';
     import { useLanguage } from '@/contexts/LanguageContext';
@@ -10,13 +10,15 @@ import React from 'react';
         yourName: "Tuna A.",
         tagline: "Entrepreneurial Developer With A Passion For System Design",
         downloadResume: "Resume",
-        learnMore: "Learn More"
+        learnMore: "Learn More",
+        contact: "Contact"
       },
       tr: {
         yourName: "Tuna A.",
         tagline: "Sistem Tasarımına Tutkulu Girişimci Geliştirici",
         downloadResume: "Resume",
-        learnMore: "Daha Fazla Bilgi"
+        learnMore: "Daha Fazla Bilgi",
+        contact: "İletişim"
       }
     };
 
@@ -71,14 +73,14 @@ import React from 'react';
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-emerald-green to-green-600 hover:from-green-600 hover:to-emerald-green/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 neumorphic-btn">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-5 w-5" />
-                {t('downloadResume')}
-              </a>
+            <Button 
+              asChild 
+              size="lg" 
+              className="bg-emerald-green/80 hover:bg-emerald-green text-white shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              <Link to="/about">
+                {t('learnMore')} <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button 
               asChild 
@@ -86,8 +88,8 @@ import React from 'react';
               size="lg" 
               className="border-primary/50 text-primary dark:border-emerald-green/60 dark:text-emerald-green hover:bg-primary/10 dark:hover:bg-emerald-green/20 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
-              <Link to="/about">
-                {t('learnMore')} <ArrowRight className="ml-2 h-5 w-5" />
+              <Link to="/contact">
+                {t('contact')} <Mail className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </motion.div>

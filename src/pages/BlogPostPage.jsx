@@ -147,7 +147,7 @@ import React from 'react';
             <div className="mb-8">
               <Button asChild variant="outline" size="sm" className="mb-6 hover:bg-accent/10 dark:hover:bg-accent/20 border-primary/50 dark:border-emerald-green/60 text-primary dark:text-emerald-green">
                 <Link to="/blog">
-                  <ArrowLeft className="mr-2 h-4 w-4" /> {language === 'en' ? 'Back to Blog' : 'Blog\'a Geri Dön'}
+                  <ArrowLeft className="mr-2 h-4 w-4" /> {language === 'en' ? 'Back to Blogs' : 'Bloglara Geri Dön'}
                 </Link>
               </Button>
               <img  className="w-full h-72 object-cover rounded-lg shadow-xl mb-6" alt={post.title} src={post.image} />
