@@ -1,11 +1,8 @@
-import React from 'react';
-    import { Button } from '@/components/ui/button';
-    import { Download } from 'lucide-react';
-    import { motion } from 'framer-motion';
-    import { Card, CardContent } from '@/components/ui/card';
-    import { useLanguage } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
+import { Card, CardContent } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
-    const translations = {
+const translations = {
       en: {
         pageTitle: "About Me",
         par1: "Hey, I’m Tuna, and yes that is my actual name. (It comes from the Danube River in Europe.) ",
@@ -26,14 +23,9 @@ import React from 'react';
       }
     };
     
-
-
-
     const AboutPage = () => {
       const { language } = useLanguage();
       const t = (key) => translations[language][key] || key;
-
-
 
       return (
         <div className="max-w-4xl mx-auto py-12 px-4">
@@ -78,23 +70,6 @@ import React from 'react';
               </Card>
             </motion.div>
           </div>
-
-          <motion.div 
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-emerald-green to-green-600 hover:from-green-600 hover:to-emerald-green/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 neumorphic-btn">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-5 w-5" />
-                {t('downloadResume')}
-              </a>
-            </Button>
-          </motion.div>
         </div>
       );
     };
