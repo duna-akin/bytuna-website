@@ -5,16 +5,18 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const translations = {
   en: {
     pageTitle: "About Me",
-    par1: "Hey, I’m Tuna, and yes that is my actual name. (It comes from the Danube River in Europe.) ",
-    par2: "I like to design and build things that give people their afternoons back: ScheduleFlow, the scheduling automation engine projected to free 250+ staff-hours every semester at my school, and KebApp, a mobile coupon hunter that auto-drops discounts before you tap “Pay” on Turkish e-commerce apps. Research-wise, I used to script Python pipelines that model quorum-sensing proteins and turning them into slick PyMOL visuals.",
-    par3: "Outside class I am scaling the Side Hustle Community (25+ student sellers, $5k+ total revenue so far) and serve as co-director of onboarding for 40+ admissions ambassadors—basically the person who gets our new guides tour-ready to market our school! When I’m not shipping code you’ll find me theory-crafting grand-strategy games, planning urban walks, or perfecting the world’s slowest skateboard tricks. Got a project—or just a café rec? Let’s talk.",
-    },
+    line1: "Hey, I’m Tuna.",
+    line2: "Yes, that’s my actual name. It’s Turkish for the Danube River!",
+    line3: "This site is where I share what I’m building, thinking about, or trying to figure out. Some of it’s technical: automating campus systems, building browser tools for Turkish e-commerce. Some of it is personal: essays on side projects, global issues, student life, or whatever else I’m wrestling with.",
+    line4: "I’m a college student, into systems, strategy, and building things that save time or solve everyday problems—ideally with others. If you’re curious about any of it, or have a good café rec, reach out!"
+  },
   tr: {
     pageTitle: "Hakkımda",
-    par1: "Selamlar! Ben Tuna.",
-    par2: "Amerika'da %100 tam burslu olarak Yazılım Mühendisliği & İktisat okuyorum. İnsanlara öğleden sonralarını geri kazandıran işler geliştiriyorum: Her dönem personele 250+ saat kazandırması planlanan Slate CRM tabanlı planlama sistemi ScheduleFlow ve Türk e-ticaret uygulamalarında ödeme öncesi otomatik indirim uygulayan mobil kupon avcısı KebApp. Araştırma tarafında ise geçmişte quorum-sensing proteinlerini modelleyen Python betikleri yazıyor ve bunları şık PyMOL görsellerine dönüştürüyordum.",
-    par3: "Ders dışında, 25+ öğrenci girişimciyi bir araya getiren Side Hustle Community’yi büyütüyorum. (Şimdiden 5.000$+ ciro) 40+ kabul elçisinin onboarding süreçlerinden sorumlu eş-yöneticilik yapıyorum — yeni rehberleri okulu marketlemek için tura hazır hale getiren kişi yani. Kod yazmadığımda CK3 ya da EU4 gibi grand-strategy oyunlarında teoriler üretir, New York'ta şehir yürüyüşleri planlar veya dünyanın en yavaş kaykay numaralarını mükemmelleştirmeye çalışırım. Bir proje fikrin ya da sadece iyi bir cafe önerin mi var? Konuşmaktan çekinme.",
-    }
+    line1: "Selam, ben Tuna.",
+    line2: "Amerika’da tam burslu lisans okuyan bir Türk öğrenciyim. Bu site, üzerinde çalıştığım, düşündüğüm ya da anlamaya çalıştığım şeyleri paylaştığım bir alan.",
+    line3: "Bazıları teknik: kampüs sistemlerini otomatikleştirmek, Türk e-ticareti için tarayıcı araçları geliştirmek gibi. Bazıları ise daha kişisel: yan projeler, küresel meseleler, Amerika’daki öğrenci hayatı ya da kafamı kurcalayan konular üzerine yazılar.", 
+    line4: "Sistemler, strateji ve zamanı boşa harcamayan çözümler üretmek ile ilgileniyorum—genelde birileriyle birlikte. İlginizi çeken bir şey olursa ya da güzel bir mekân öneriniz varsa, yazmaktan çekinmeyin."
+  }
 };
     
 const AboutPage = () => {
@@ -49,13 +51,16 @@ const AboutPage = () => {
           <Card className="glass-card p-2">
             <CardContent className="text-lg text-foreground/90 dark:text-foreground/80 leading-relaxed pt-6">
               <p className="mb-4">
-                {t('par1')}
+                {t('line1')}
               </p>
               <p className="mb-4">
-                {t('par2')}
+                {t('line2')}
               </p>
               <p className="mb-4">
-                {t('par3')}
+                {t('line3')}
+              </p>
+              <p className="mb-4">
+                {t('line4')}
               </p>
             </CardContent>
           </Card>
