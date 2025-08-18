@@ -42,7 +42,7 @@ import React, { useState, useEffect } from 'react';
         { href: '/', labelKey: 'home', icon: <Code className="h-5 w-5" /> },
         { href: '/about', labelKey: 'about', icon: <User className="h-5 w-5" /> },
         { href: '/projects', labelKey: 'projects', icon: <FolderOpen className="h-5 w-5" /> },
-        { href: '/blog', labelKey: 'blog', icon: <BookOpen className="h-5 w-5" /> },
+        // { href: '/blog', labelKey: 'blog', icon: <BookOpen className="h-5 w-5" /> },
         { href: '/contact', labelKey: 'contact', icon: <Mail className="h-5 w-5" /> },
       ];
       
