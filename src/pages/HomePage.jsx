@@ -7,14 +7,14 @@ import React from 'react';
 
     const translations = {
       en: {
-        yourName: "Tuna A.",
+        yourName: "Tuna AKIN",
         tagline: "Entrepreneurial Developer With A Passion For System Design & Project Management",
         downloadResume: "Resume",
         learnMore: "Learn More",
         contact: "Contact"
       },
       tr: {
-        yourName: "Tuna A.",
+        yourName: "Tuna AKIN",
         tagline: "Sistem Tasarımına & Proje Yönetimine Tutkulu Girişimci Geliştirici",
         downloadResume: "Resume",
         learnMore: "Daha Fazla Bilgi",
