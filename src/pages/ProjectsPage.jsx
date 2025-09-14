@@ -10,51 +10,51 @@ const projectsData = {
     pageTitle: "My Projects",
     projects: [
       {
+        title: "Lafayette Search Agent",
+        description: "A simple chatbot to answer your questions about Lafayette College",
+        technologies: ["Python", "Langchain", "API Integration"],
+        status: "Completed",
+        date: "2025",
+        github: "https://github.com/duna-akin/lafayette-search-agent",
+        demo: null,
+        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71"
+      },
+      {
         title: "ScheduleFlow",
         description: "A scheduling automation engine built for Lafayette College's Ambassador Program using Slate CRM. Designed to intelligently assign tours based on performance and availability metrics, projected to save 250+ staff hours each semester.",
-        technologies: ["Slate CRM", "JavaScript", "Automation"],
-        status: "In Development",
-        date: "Summer 2025",
+        technologies: ["Slate CRM", "JavaScript", "Agile/Scrum"],
+        status: "Completed",
+        date: "2025",
         github: null,
         demo: null,
         image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71"
       },      {
-        title: "KebApp",
-        description: "...",
-        technologies: ["React Native", "API Integration", "Mobile Dev"],
+        title: "Etiket Discount Aggregator",
+        description: "Deal & discount aggregator for Turkish e-commerce, verifying and centralizing promos to help households preserve purchasing power in a high-inflation economy ",
+        technologies: ["JavaScript", "API Integration", "Python Scripting", "Playwright Web Scraping"],
         status: "In Development",
         date: "2025",
-        github: null,
+        github: "https://github.com/duna-akin/etiket-discount-aggregator",
         demo: null,
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
       },
       {
-        title: "LuminaPrep",
-        description: "A college counseling initiative that helps Turkish students navigate the U.S. college application process. It offers guidance on application strategy, essay development, and financial aid—tailored to the unique challenges international applicants face. The goal is to make the admissions process more transparent and achievable for students who may not have access to expert advising.",
-        technologies: ["Educational Consulting", "Content Creation", "Mentoring"],
-        status: "Active",
-        date: "Winter 2024 - Present",
-        github: null,
-        demo: null,
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
-      },
-      {
-        title: "Protein Structure Analysis Pipeline",
+        title: "Protein Structure Analysis of Lam-C in Anaxybacillus",
         description: "Python-based computational pipeline for modeling and refining 3D structures of Lam quorum-sensing receptors. Trajectory analysis and high-resolution PyMOL visualizations adapted in NSF-funded research.",
-        technologies: ["Python", "PyMOL", "Linux", "Molecular Dynamics"],
+        technologies: ["Python", "PyMOL", "Linux", "Animation"],
         status: "Research Project",
         date: "2024-2025",
-        github: null, // Research code
+        github: null,
         demo: null,
         image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69"
       },
       {
-        title: "CNN-Based Real-Time Image Recognition of Industrial Produce",
+        title: "CNN-Based Real-Time Video Recognition of Industrial Produce",
         description: "Custom convolutional neural network for smart manufacturing, trained on 1,000-image benchmark dataset. Winner of TUBİTAK 2204-A National Research Competition (1st out of 753 entries).",
-        technologies: ["Python", "TensorFlow", "Computer Vision", "CNN"],
+        technologies: ["Python", "TensorFlow", "Deep Learning", "Computer Vision", "CNN"],
         status: "Award Winner",
-        date: "2020-2022",
-        github: null, // Competition project
+        date: "2020-2021",
+        github: null,
         demo: null,
         image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c"
       }
@@ -81,16 +81,6 @@ const projectsData = {
         github: null,
         demo: null,
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
-      },
-      {
-        title: "LuminaPrep",
-        description: "Türk öğrencilerinin ABD üniversite başvuru sürecinde yol almasına yardımcı olan üniversite danışmanlığı girişimi. Başvuru stratejisi, kompozisyon geliştirme ve mali yardım konularında rehberlik sunuyor—uluslararası başvuru sahiplerinin karşılaştığı benzersiz zorluklara özel çözümler getiriyor. Amaç, uzman danışmanlığa erişimi olmayan öğrenciler için kabul sürecini daha şeffaf ve ulaşılabilir hale getirmek.",
-        technologies: ["Eğitim Danışmanlığı", "İçerik Üretimi", "Mentorluk"],
-        status: "Aktif",
-        date: "Kış 2024 - Devam Ediyor",
-        github: null,
-        demo: null,
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
       },
       {
         title: "Protein Yapı Analiz Hattı",
