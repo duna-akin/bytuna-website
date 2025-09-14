@@ -7,7 +7,7 @@ import React from 'react';
 
     const translations = {
       en: {
-        yourName: "Tuna AKIN",
+        yourName: "Tuna Akin",
         tagline: "Entrepreneurial Developer With A Passion For System Design & Project Management",
         downloadResume: "Resume",
         learnMore: "Learn More",
